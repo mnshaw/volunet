@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       ),
       // home: new PageMain(),
 //      home: new CardDemo(),
-      home: new CreateProfile(),
+      home: new Welcome(),
       //home: BottomNavigationDemo(),
       // home:new exp(),
     );
