@@ -10,11 +10,11 @@ DecorationImage image2 = new DecorationImage(
 );
 
 DecorationImage image3 = new DecorationImage(
-  image: new ExactAssetImage('assets/img3.jpg'),
+  image: new ExactAssetImage('assets/img4.jpg'),
   fit: BoxFit.cover,
 );
 DecorationImage image4 = new DecorationImage(
-  image: new ExactAssetImage('assets/img4.jpg'),
+  image: new ExactAssetImage('assets/img3.jpg'),
   fit: BoxFit.cover,
 );
 DecorationImage image5 = new DecorationImage(
