@@ -110,7 +110,7 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                             _appBarBehavior == AppBarBehavior.snapping,
                         snap: _appBarBehavior == AppBarBehavior.snapping,
                         flexibleSpace: new FlexibleSpaceBar(
-                          title: new Text("Party"),
+                          title: new Text("Run Walk Volunteer"),
                           background: new Stack(
                             fit: StackFit.expand,
                             children: <Widget>[
@@ -155,7 +155,7 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                                             new Padding(
                                               padding:
                                                   const EdgeInsets.all(8.0),
-                                              child: new Text("10:00  AM"),
+                                              child: new Text("07:30  AM"),
                                             )
                                           ],
                                         ),
@@ -168,7 +168,7 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                                             new Padding(
                                               padding:
                                                   const EdgeInsets.all(8.0),
-                                              child: new Text("15 MILES"),
+                                              child: new Text("5 MILES"),
                                             )
                                           ],
                                         ),
@@ -185,7 +185,7 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                                     ),
                                   ),
                                   new Text(
-                                      "It's party, party, party like a nigga just got out of jail Flyin' in my 'Rari like a bat that just flew outta hell I'm from the east of ATL, but ballin' in the Cali hills Lil mama booty boomin', that bitch movin' and she standin' still I know these bitches choosin' me, but I got 80 on me still. host for the purposes of socializing, conversation, recreation, or as part of a festival or other commemoration of a special occasion. A party will typically feature food and beverages, and often music and dancing or other forms of entertainment.  "),
+                                      "Run-Walk Events was originally created to host the Race Across the USA. We ran a marathon a day from Huntington Beach, CA all the way to the White House in Washington DC 4 1/2 months later. Along the way, we visited over 5,000 students in 29 schools to challenge and encourage them around getting active and eating right.Using the Race Across the USA as our launchpad, we are planning a series of running events that will begin on January 1, 2017 in Anaheim. The following year, we plan to add San Diego and Santa Barbara. Every event we hold will be a fundraiser in support of a local childhood fitness organization "),
                                   new Container(
                                     margin: new EdgeInsets.only(top: 25.0),
                                     padding: new EdgeInsets.only(
