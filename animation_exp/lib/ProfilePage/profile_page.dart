@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:animation_exp/SwipeAnimation/index.dart';
 import 'package:animation_exp/CreateProfile/CreateProfile.dart';
+import 'package:animation_exp/SwipeAnimation/styles.dart';
 
 class Profile extends StatefulWidget {
   @override
@@ -18,37 +19,26 @@ class _Profile extends State<Profile> {
     return Scaffold(
       body: new Stack(
         children: <Widget>[
-          new DecoratedBox(
-            decoration: new BoxDecoration(
-              image: new DecorationImage(image: new AssetImage("assets/avatars/avatar-3.jpg")),
+          new Center(
+            child: new CircleAvatar(
+              backgroundImage: avatar3,
+              radius: 96.0,
             ),
           ),
+          SizedBox(height: 48.0),
           new Center(
             child: new Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                new Text('welcome to volunet',
+                new Text('Jane S.',
                   style: new TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 40.0,
+                    fontSize: 24.0,
                     fontFamily: 'Roboto',
                   ),
                 ),
-                new Icon(account_circle, size: 72.0),
-                new RaisedButton(
-                  color: Colors.blue,
-                  child: new Text('Log in with LinkedIn'),
-                  onPressed: () {
-                    Navigator.of(context).pushReplacement(
-                        new MaterialPageRoute(builder: (context) => new CardDemo()));
-                  },
-                ),
-                new RaisedButton(
-                  child: new Text('Create Profile'),
-                  onPressed: () {
-                    Navigator.of(context).pushReplacement(
-                        new MaterialPageRoute(builder: (context) => new CreateProfile()));
-                  },
+                new Text(
+                  'Engineer at Flutter'
                 )
               ],
             ),
