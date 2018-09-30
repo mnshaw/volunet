@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:animation_exp/SwipeAnimation//index.dart';
 
 
 class MyOptions extends StatefulWidget {
@@ -108,7 +109,8 @@ class _CreateProfileState extends State<CreateProfile> {
           minWidth: 200.0,
           height: 42.0,
           onPressed: () {
-            //Navigator.of(context).pushNamed(HomePage.tag);
+            Navigator.of(context).pushReplacement(
+                new MaterialPageRoute(builder: (context) => new CardDemo()));
           },
           color: Colors.lightBlueAccent,
           child: Text('Complete', style: TextStyle(color: Colors.white)),
