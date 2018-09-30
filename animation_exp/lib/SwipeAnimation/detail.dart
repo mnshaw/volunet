@@ -12,6 +12,7 @@ class DetailPage extends StatefulWidget {
 
 enum AppBarBehavior { normal, pinned, floating, snapping }
 
+
 class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
   AnimationController _containerController;
   Animation<double> width;
@@ -214,21 +215,52 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                                               CrossAxisAlignment.start,
                                           children: <Widget>[
                                             new CircleAvatar(
-                                                backgroundImage: avatar1),
+                                                backgroundImage: avatar1,
+                                                child: GestureDetector(
+                                                  onTap: () {
+                                                    print("onTap called.");
+                                                  },
+                                                ),
+                                            ),
                                             new CircleAvatar(
                                               backgroundImage: avatar2,
+                                              child: GestureDetector(
+                                                onTap: () {
+                                                  print("onTap called.");
+                                                },
+                                              ),
                                             ),
                                             new CircleAvatar(
                                               backgroundImage: avatar3,
+                                              child: GestureDetector(
+                                                onTap: () {
+                                                  print("onTap called.");
+                                                },
+                                              ),
                                             ),
                                             new CircleAvatar(
                                               backgroundImage: avatar4,
+                                              child: GestureDetector(
+                                                onTap: () {
+                                                  print("onTap called.");
+                                                },
+                                              ),
                                             ),
                                             new CircleAvatar(
                                               backgroundImage: avatar5,
+                                              child: GestureDetector(
+                                                onTap: () {
+                                                  print("onTap called.");
+                                                },
+                                              ),
                                             ),
                                             new CircleAvatar(
                                               backgroundImage: avatar6,
+                                              child: GestureDetector(
+                                                onTap: () {
+                                                  print("onTap called.");
+                                                },
+                                              ),
                                             )
                                           ],
                                         )
