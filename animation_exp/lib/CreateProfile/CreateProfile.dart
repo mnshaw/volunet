@@ -1,5 +1,35 @@
 import 'package:flutter/material.dart';
 
+
+class MyOptions extends StatefulWidget {
+  @override
+  _MyOptionsState createState() => new _MyOptionsState();
+}
+
+var labels = ['Fitness', 'Education', 'Environment', 'Animal Welfare'];
+
+class _MyOptionsState extends State<MyOptions> {
+  int _value = 0;
+
+  @override
+  Widget build(BuildContext context) {
+    return new Wrap(
+      children: new List<Widget>.generate(
+        3,
+            (int index) {
+          return new ChoiceChip(
+            label: new Text(labels[index]),
+            selected: false,//_value == index,
+            onSelected: (bool selected) {
+              selected = !selected;
+            },
+          );
+        },
+      ).toList(),
+    );
+  }
+}
+
 class CreateProfile extends StatefulWidget {
   static String tag = 'login-page';
   @override
@@ -86,6 +116,15 @@ class _CreateProfileState extends State<CreateProfile> {
       ),
     );
 
+    final choiceChips =  new MyOptions();
+
+    final interests = TextField(
+      decoration: InputDecoration(
+          border: InputBorder.none,
+          hintText: 'Interests:'
+      ),
+    );
+
     return Scaffold(
       backgroundColor: Colors.white,
       body: new Stack(
@@ -101,6 +140,8 @@ class _CreateProfileState extends State<CreateProfile> {
                 SizedBox(height: 8.0),
                 password,
                 name,
+                interests,
+                choiceChips,
                 SizedBox(height: 24.0),
                 createProfileButton,
               ],
