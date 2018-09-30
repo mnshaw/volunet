@@ -20,30 +20,36 @@ class _Profile extends State<Profile> {
       body: new Stack(
         children: <Widget>[
           new Center(
-            child: new CircleAvatar(
-              backgroundImage: avatar3,
-              radius: 96.0,
-            ),
-          ),
-          SizedBox(height: 48.0),
-          new Center(
-            child: new Column(
-              mainAxisSize: MainAxisSize.min,
+            child: ListView(
               children: <Widget>[
-                new Text('Jane S.',
-                  style: new TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 24.0,
-                    fontFamily: 'Roboto',
-                  ),
+                SizedBox(height: 48.0),
+                new CircleAvatar(
+                  backgroundImage: avatar3,
+                  radius: 96.0,
                 ),
-                new Text(
-                  'Engineer at Flutter'
-                )
+                SizedBox(height: 48.0),
+                new Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    new Text('Jane S.',
+                      style: new TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24.0,
+                        fontFamily: 'Roboto',
+                      ),
+                    ),
+                    new Text(
+                      'Engineer at Flutter'
+                    ),
+                    new Text(
+                      'Interests: Fitness, Education'
+                    )
+                  ],
+                ),
               ],
             ),
           ),
-        ],
+        ]
       ),
     );
   }
