@@ -236,8 +236,11 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                                               backgroundImage: avatar3,
                                               child: GestureDetector(
                                                 onTap: () {
-                                                  Navigator.of(context).pushReplacement(
-                                                      new MaterialPageRoute(builder: (context) => new Profile()));                                                },
+                                                  Navigator.push(
+                                                    context,
+                                                    MaterialPageRoute(builder: (context) => new Profile()),
+                                                  );
+                                                  },
                                               ),
                                             ),
                                             new CircleAvatar(

@@ -27,14 +27,14 @@ class _WelcomeState extends State<Welcome> {
               child: new Column(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
-                  new Text('welcome to volunet',
+                  new Text('Welcome to Volunet',
                     style: new TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 40.0,
                     fontFamily: 'Roboto',
                   ),
                 ),
-                new Icon(account_circle, size: 72.0),
+                  SizedBox(height: 72.0),
                 new RaisedButton(
                   color: Colors.blue,
                   child: new Text('Log in with LinkedIn'),

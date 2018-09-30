@@ -56,7 +56,7 @@ class _CreateProfileState extends State<CreateProfile> {
     final email = TextFormField(
       keyboardType: TextInputType.emailAddress,
       autofocus: false,
-      initialValue: 'johndoe@gmail.com',
+      initialValue: 'marieshaw@gmail.com',
       decoration: InputDecoration(
         hintText: 'Email',
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
@@ -79,7 +79,7 @@ class _CreateProfileState extends State<CreateProfile> {
       children: <Widget>[
         new TextFormField(
           autofocus: false,
-          initialValue: 'John',
+          initialValue: 'Marie',
           obscureText: false,
           decoration: InputDecoration(
             hintText: 'First Name',
@@ -91,7 +91,7 @@ class _CreateProfileState extends State<CreateProfile> {
 
         new TextFormField(
           autofocus: false,
-          initialValue: 'Doe',
+          initialValue: 'Shaw',
           obscureText: false,
           decoration: InputDecoration(
             hintText: 'Last Name',

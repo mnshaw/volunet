@@ -34,22 +34,35 @@ class _Profile extends State<Profile> {
                     new Text('Jane S.',
                       style: new TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 24.0,
+                        fontSize: 32.0,
                         fontFamily: 'Roboto',
                       ),
                     ),
                     new Text(
-                      'Engineer at Flutter'
+                      'Engineer at Google (Flutter)'
+                    ),
+                    SizedBox(height: 48.0),
+                    new Text(
+                      'Interests: Fitness, Education',
+                      style: new TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18.0,
+                        fontFamily: 'Roboto',
+                      ),
                     ),
                     new Text(
-                      'Interests: Fitness, Education'
+                      'Volunteer Points: 528',
+                      style: new TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18.0,
+                        fontFamily: 'Roboto',
+                      ),
                     ),
                     new RaisedButton(
                       color: Colors.blue,
                       child: new Text('Ok'),
                       onPressed: () {
-                        Navigator.of(context).pushReplacement(
-                            new MaterialPageRoute(builder: (context) => new DetailPage()));
+                        Navigator.pop(context);
                       },
                     ),
                   ],
