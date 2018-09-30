@@ -2,6 +2,7 @@ import 'package:animation_exp/SwipeAnimation/data.dart';
 import 'package:flutter/material.dart';
 import 'package:animation_exp/SwipeAnimation/styles.dart';
 import 'package:flutter/scheduler.dart';
+import 'package:animation_exp/ProfilePage/profile_page.dart';
 
 class DetailPage extends StatefulWidget {
   final DecorationImage type;
@@ -11,6 +12,7 @@ class DetailPage extends StatefulWidget {
 }
 
 enum AppBarBehavior { normal, pinned, floating, snapping }
+
 
 class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
   AnimationController _containerController;
@@ -214,21 +216,53 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                                               CrossAxisAlignment.start,
                                           children: <Widget>[
                                             new CircleAvatar(
-                                                backgroundImage: avatar1),
+                                                backgroundImage: avatar1,
+                                                child: GestureDetector(
+                                                  onTap: () {
+                                                    Navigator.of(context).pushReplacement(
+                                                        new MaterialPageRoute(builder: (context) => new Profile()));                                                  },
+                                                ),
+                                            ),
                                             new CircleAvatar(
                                               backgroundImage: avatar2,
+                                              child: GestureDetector(
+                                                onTap: () {
+                                                  Navigator.of(context).pushReplacement(
+                                                      new MaterialPageRoute(builder: (context) => new Profile()));
+                                                },
+                                              ),
                                             ),
                                             new CircleAvatar(
                                               backgroundImage: avatar3,
+                                              child: GestureDetector(
+                                                onTap: () {
+                                                  Navigator.of(context).pushReplacement(
+                                                      new MaterialPageRoute(builder: (context) => new Profile()));                                                },
+                                              ),
                                             ),
                                             new CircleAvatar(
                                               backgroundImage: avatar4,
+                                              child: GestureDetector(
+                                                onTap: () {
+                                                  Navigator.of(context).pushReplacement(
+                                                      new MaterialPageRoute(builder: (context) => new Profile()));                                                },
+                                              ),
                                             ),
                                             new CircleAvatar(
                                               backgroundImage: avatar5,
+                                              child: GestureDetector(
+                                                onTap: () {
+                                                  Navigator.of(context).pushReplacement(
+                                                      new MaterialPageRoute(builder: (context) => new Profile()));                                                },
+                                              ),
                                             ),
                                             new CircleAvatar(
                                               backgroundImage: avatar6,
+                                              child: GestureDetector(
+                                                onTap: () {
+                                                  Navigator.of(context).pushReplacement(
+                                                      new MaterialPageRoute(builder: (context) => new Profile()));                                                },
+                                              ),
                                             )
                                           ],
                                         )
