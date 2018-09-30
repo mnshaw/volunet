@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:animation_exp/SwipeAnimation/index.dart';
+import 'package:animation_exp/CreateProfile/CreateProfile.dart';
 
 class Welcome extends StatefulWidget {
   @override
@@ -46,7 +47,7 @@ class _WelcomeState extends State<Welcome> {
                   child: new Text('Create Profile'),
                   onPressed: () {
                     Navigator.of(context).pushReplacement(
-                      new MaterialPageRoute(builder: (context) => new CardDemo()));
+                      new MaterialPageRoute(builder: (context) => new CreateProfile()));
                   },
                 )
                 ],

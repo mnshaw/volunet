@@ -135,6 +135,8 @@ class _CreateProfileState extends State<CreateProfile> {
               padding: EdgeInsets.only(left: 24.0, right: 24.0),
               children: <Widget>[
                 logo,
+                SizedBox(height: 8.0),
+                new Center(child: new Text('add profile picture')),
                 SizedBox(height: 48.0),
                 email,
                 SizedBox(height: 8.0),
