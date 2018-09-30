@@ -10,20 +10,24 @@ class MyOptions extends StatefulWidget {
 var labels = ['Fitness', 'Education', 'Environment', 'Animal Welfare'];
 
 class _MyOptionsState extends State<MyOptions> {
-  int _value = 0;
+  int _value = -1;
+  Color _color = null;
 
   @override
   Widget build(BuildContext context) {
     return new Wrap(
       children: new List<Widget>.generate(
-        3,
+        4,
             (int index) {
           return new ChoiceChip(
             label: new Text(labels[index]),
-            selected: false,//_value == index,
+            selected: _value == index,
             onSelected: (bool selected) {
-              selected = !selected;
+              setState(() {
+                _value = selected ? index : null;
+              });
             },
+
           );
         },
       ).toList(),
