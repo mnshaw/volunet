@@ -20,7 +20,7 @@ class _WelcomeState extends State<Welcome> {
           children: <Widget>[
             new Container(
               decoration: new BoxDecoration(
-              image: new DecorationImage(image: new AssetImage("assets/img4.jpg"), fit: BoxFit.cover,),
+              image: new DecorationImage(image: new AssetImage("assets/welcome.jpg"), fit: BoxFit.cover,),
               ),
             ),
             new Center(
