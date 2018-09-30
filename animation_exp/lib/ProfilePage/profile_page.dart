@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:animation_exp/SwipeAnimation/index.dart';
-import 'package:animation_exp/CreateProfile/CreateProfile.dart';
+import 'package:animation_exp/SwipeAnimation/detail.dart';
 import 'package:animation_exp/SwipeAnimation/styles.dart';
 
 class Profile extends StatefulWidget {
@@ -43,7 +43,15 @@ class _Profile extends State<Profile> {
                     ),
                     new Text(
                       'Interests: Fitness, Education'
-                    )
+                    ),
+                    new RaisedButton(
+                      color: Colors.blue,
+                      child: new Text('Ok'),
+                      onPressed: () {
+                        Navigator.of(context).pushReplacement(
+                            new MaterialPageRoute(builder: (context) => new DetailPage()));
+                      },
+                    ),
                   ],
                 ),
               ],
