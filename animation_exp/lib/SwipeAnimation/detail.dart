@@ -2,6 +2,7 @@ import 'package:animation_exp/SwipeAnimation/data.dart';
 import 'package:flutter/material.dart';
 import 'package:animation_exp/SwipeAnimation/styles.dart';
 import 'package:flutter/scheduler.dart';
+import 'package:animation_exp/ProfilePage/profile_page.dart';
 
 class DetailPage extends StatefulWidget {
   final DecorationImage type;
@@ -218,15 +219,16 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                                                 backgroundImage: avatar1,
                                                 child: GestureDetector(
                                                   onTap: () {
-                                                    print("onTap called.");
-                                                  },
+                                                    Navigator.of(context).pushReplacement(
+                                                        new MaterialPageRoute(builder: (context) => new Profile()));                                                  },
                                                 ),
                                             ),
                                             new CircleAvatar(
                                               backgroundImage: avatar2,
                                               child: GestureDetector(
                                                 onTap: () {
-                                                  print("onTap called.");
+                                                  Navigator.of(context).pushReplacement(
+                                                      new MaterialPageRoute(builder: (context) => new Profile()));
                                                 },
                                               ),
                                             ),
@@ -234,32 +236,32 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                                               backgroundImage: avatar3,
                                               child: GestureDetector(
                                                 onTap: () {
-                                                  print("onTap called.");
-                                                },
+                                                  Navigator.of(context).pushReplacement(
+                                                      new MaterialPageRoute(builder: (context) => new Profile()));                                                },
                                               ),
                                             ),
                                             new CircleAvatar(
                                               backgroundImage: avatar4,
                                               child: GestureDetector(
                                                 onTap: () {
-                                                  print("onTap called.");
-                                                },
+                                                  Navigator.of(context).pushReplacement(
+                                                      new MaterialPageRoute(builder: (context) => new Profile()));                                                },
                                               ),
                                             ),
                                             new CircleAvatar(
                                               backgroundImage: avatar5,
                                               child: GestureDetector(
                                                 onTap: () {
-                                                  print("onTap called.");
-                                                },
+                                                  Navigator.of(context).pushReplacement(
+                                                      new MaterialPageRoute(builder: (context) => new Profile()));                                                },
                                               ),
                                             ),
                                             new CircleAvatar(
                                               backgroundImage: avatar6,
                                               child: GestureDetector(
                                                 onTap: () {
-                                                  print("onTap called.");
-                                                },
+                                                  Navigator.of(context).pushReplacement(
+                                                      new MaterialPageRoute(builder: (context) => new Profile()));                                                },
                                               ),
                                             )
                                           ],
